@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var games = new List<string> { "Call of Duty", "World of Warcraft", "Madden", "Contra" , "Street Figter"};
+
+            var sortGames = games.OrderBy(x => x).ToList();
+            //Console.WriteLine($"{sortGames}");
+            //games.Sort();
+            Console.WriteLine(string.Join(" ", games));
+
+
+
+
         }
     }
 }
