@@ -6,10 +6,10 @@
         {
             var games = new List<string> { "Call of Duty", "World of Warcraft", "Madden", "Contra" , "Street Figter"};
 
-            var sortGames = games.OrderBy(x => x).ToList();
+            var sortGames = games.OrderBy(x => x.Length).ToList();
             //Console.WriteLine($"{sortGames}");
             //games.Sort();
-            Console.WriteLine(string.Join(" ", games));
+            Console.WriteLine(string.Join(" ", sortGames));
 
 
 
